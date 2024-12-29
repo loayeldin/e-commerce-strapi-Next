@@ -49,9 +49,11 @@
     "category": {
       "type": "enumeration",
       "enum": [
-        "TECH",
-        "MARKETING",
-        "SECURITY"
+        "women's clothing",
+        "men's clothing",
+        "jewelry",
+        "electronics",
+        "shoes"
       ]
     },
     "orders": {
@@ -59,6 +61,9 @@
       "relation": "manyToMany",
       "target": "api::order.order",
       "mappedBy": "products"
+    },
+    "rating": {
+      "type": "json"
     }
   }
 }

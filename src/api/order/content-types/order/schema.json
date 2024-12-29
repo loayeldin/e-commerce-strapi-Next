@@ -26,6 +26,22 @@
     },
     "email": {
       "type": "email"
+    },
+    "shippingstatus": {
+      "type": "enumeration",
+      "enum": [
+        "pending",
+        "Processing",
+        "Shipped",
+        "in Transit",
+        "Out for Delivery",
+        "Delivered",
+        "Cancelled",
+        "Returned"
+      ]
+    },
+    "productQuantities": {
+      "type": "json"
     }
   }
 }
